@@ -1,0 +1,123 @@
+{
+  "id": "pf2e-example",
+  "title": "PF2e Example",
+  "description": "An example module.",
+  "version": "1.2",
+  "authors": [
+    {"name": "W. Brian Lane"}
+  ],
+  "compatibility": {
+    "minimum": "10.285",
+    "verified": "10.285"
+  },
+  "relationships": {
+    "systems": [{
+      "id": "pf2e",
+      "type": "system",
+      "manifest": "https://github.com/foundryvtt/pf2e/releases/latest/download/system.json",
+      "compatibility": {
+        "minimum": "4.2.4"
+      }
+    }]
+  },
+  "packs": [
+    {
+      "label": "Example - Bestiary",
+      "type": "Actor",
+      "name": "example-bestiary",
+      "path": "./packs/example-bestiary.db",
+      "system": "pf2e",
+      "package": "pf2e-example",
+      "private": false
+    },
+    {
+      "label": "Example - Feats",
+      "type": "Item",
+      "name": "example-feats",
+      "path": "./packs/example-feats.db",
+      "system": "pf2e",
+      "package": "pf2e-example",
+      "private": false
+    },
+    {
+      "label": "Test Grippli Feats",
+      "type": "Item",
+      "name": "test-grippli-feats",
+      "path": "./packs/test-grippli-feats.db",
+      "system": "pf2e",
+      "package": "pf2e-example",
+      "private": false
+    },
+    {
+      "label": "Example - Spells",
+      "type": "Item",
+      "name": "example-spells",
+      "path": "./packs/example-spells.db",
+      "system": "pf2e",
+      "package": "pf2e-example",
+      "private": false
+    },
+    {
+      "label": "Example - Maps",
+      "type": "Scene",
+      "name": "example-maps",
+      "path": "./packs/example-maps.db",
+      "system": "pf2e",
+      "package": "pf2e-example",
+      "private": false
+    },
+    {
+      "label": "Example - Wrath of the Mitflits",
+      "type": "JournalEntry",
+      "name": "example-wrath-of-the-mitflits",
+      "path": "./packs/example-wrath-of-the-mitflits.db",
+      "system": "pf2e",
+      "package": "pf2e-example",
+      "private": false
+    }
+],
+  "flags": {
+  "pf2e-example": {
+    "pf2e-homebrew": {
+      "baseWeapons": {
+        "nashi-bomblobber": "Nashi Bomblobber",
+        "nashi-flamebelcher": "Nashi Flamebelcher"
+      },
+      "creatureTraits": {
+        "bugbear": "Bugbear",
+        "dragonkin": "Dragonkin"
+      },
+      "equipmentTraits": {
+        "body-paint": {
+          "label": "Body Paint",
+          "description": "<p>A body paint is...</p><p>Second Paragraph...</p>"
+        },
+        "cartridge": {
+          "label": "Cartridge",
+          "description": "Alchemical cartridges are..."
+        }
+      },
+      "featTraits": {
+        "bugbear": "Bugbear",
+        "yroometji": "Yroometji"
+      },
+      "spellTraits": {
+        "tanuki": "Tanuki"
+      },
+      "weaponTraits": {
+        "capacity-2": {
+          "label": "Capacity 2",
+          "description": "PF2E.TraitDescriptionCapacity"
+        },
+        "return": {
+          "label": "Return",
+          "description": "A weapon with this trait..."
+        }
+      }
+    }
+  }
+},
+"url": "https://github.com/LionsBrainMedia/grippli-test",
+"manifest": "https://raw.githubusercontent.com/LionsBrainMedia/grippli-test/master/module.json",
+"download": "https://github.com/LionsBrainMedia/grippli-test/archive/refs/heads/main.zip"
+}
